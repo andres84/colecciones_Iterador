@@ -35,12 +35,29 @@ public class CuentasUsuarios {
        
         //StringBuilder concat = new StringBuilder();
         
-        /*for(Cliente cliente : clientesBanco){
+        //crear iterador para remover un ojeto dentro de una coleccion
+        
+        Iterator<Cliente> it = clientesBanco.iterator();
+        
+        while(it.hasNext()){
+            
+            String nombre_cliente = it.next().getNombre();
+            
+            if(nombre_cliente.equals("andres fragozo")){
+                
+                it.remove();
+                
+            }
+            
+        }
+        
+        for(Cliente cliente : clientesBanco){
             
             System.out.println(cliente.getNombre() + " " + cliente.getN_cuenta() + " " + cliente.getSaldo());  
             
-        }*/
-        //crear iterador
+        }
+        
+        /*//crear iterador
         Iterator<Cliente> it = clientesBanco.iterator();
         
         while(it.hasNext()){
@@ -48,7 +65,7 @@ public class CuentasUsuarios {
             String nombre_cliente = it.next().getNombre();
             System.out.println(nombre_cliente);
             
-        }
+        }*/
         
     }
     
