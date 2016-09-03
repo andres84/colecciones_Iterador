@@ -51,6 +51,9 @@ public class CuentasUsuarios {
             
         }
         
+        
+        
+        
         for(Cliente cliente : clientesBanco){
             
             System.out.println(cliente.getNombre() + " " + cliente.getN_cuenta() + " " + cliente.getSaldo());  
